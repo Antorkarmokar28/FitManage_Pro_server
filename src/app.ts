@@ -3,6 +3,7 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import router from "./app/routes";
 import notFound from "./app/middlewares/notFound";
+import globalErrorHandeling from "./app/middlewares/globalErrorHandeling";
 const app: Application = express();
 // using parser
 app.use(express.json());
@@ -18,7 +19,9 @@ const testServer = async (req: Request, res: Response) => {
   });
 };
 app.get("/", testServer);
-// inclune in not found api middlewares
+// include in global error handler middleware
+app.use(globalErrorHandeling);
+// inclune in not found api middleware
 app.use(notFound);
 
 export default app;
