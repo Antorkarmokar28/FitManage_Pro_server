@@ -10,8 +10,8 @@ A robust Gym Management System built using **TypeScript**, **Express.js**, and *
 |--------------------|-----------------------------|
 | Programming Language | TypeScript                |
 | Backend Framework   | Express.js                 |
-| ORM/ODM             | Prisma (Preferred) / Mongoose |
-| Database            | PostgreSQL (Preferred) / MongoDB |
+| ORM/ODM             | Mongoose |
+| Database            | MongoDB |
 | Authentication      | JWT (JSON Web Tokens)      |
 | Architecture Pattern| Modular Pattern (Preferred) |
 
