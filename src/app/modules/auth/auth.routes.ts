@@ -17,4 +17,9 @@ router.post(
   authController.userLogin,
 );
 
+router.get(
+  '/me',
+  authController.getUserProfile,
+);
+
 export const authRouter = router;

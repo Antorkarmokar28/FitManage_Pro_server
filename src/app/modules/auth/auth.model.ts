@@ -6,12 +6,11 @@ import config from '../../config';
 const userSchema = new Schema<IUser>(
   {
     name: { type: String, required: true },
-    email: { type: String, required: true, select: 0 },
-    password: { type: String, required: true },
+    email: { type: String, required: true},
+    password: { type: String, required: true, select: 0 },
     role: {
       type: String,
       enum: ['admin', 'trainer', 'trainee'],
-      default: 'trainee',
       required: true,
     },
     phone: { type: String },
