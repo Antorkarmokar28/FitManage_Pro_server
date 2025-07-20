@@ -47,7 +47,7 @@ const getClassById = catchAsync(async (req, res) => {
 
 const updateClass = catchAsync(async (req, res) => {
   const { id } = req.params;
-  const result = await classService.updateClassIntoDB(id, req.params);
+  const result = await classService.updateClassIntoDB(id, req.body);
   sendResponse(res, {
     statusCode: StatusCodes.OK,
     success: true,
