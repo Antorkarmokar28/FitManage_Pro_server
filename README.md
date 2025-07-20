@@ -4,6 +4,8 @@ A robust Gym Management System built using **TypeScript**, **Express.js**, and *
 
 ---
 
+## Json file: https://drive.google.com/file/d/1wegYicufIY_PGmUREgeKZQMXJ1drCzrM/view?usp=sharing
+
 ## 🚀 Technology Stack
 
 | Layer              | Technology                  |
